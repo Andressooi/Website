@@ -4,7 +4,7 @@
     <title>My CSS Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+  <body>
     <nav>
       <ul class="topnav" id="dropdownClick">
         <li><a href="#home">Home</a></li>
@@ -13,21 +13,52 @@
         <li><a href="#about">About</a></li>
         <li class="topnav-right"><a href="#signup">Sign Up</a></li>
         <li class="topnav-right"><a href="#signin">Sign In</a></li>
-    <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">💩</a></li>
-    </ul>
-</nav>    
+        <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">💩</a></li>
+      </ul>
+    </nav>    
+      <div class="container" id="section-1-gradient">
+        <div class="row">
+           <div class="col-6">
+            <div class="leftSide-col">
+               <h1 class="large">Gym Playlist</h1>
+               <h1 class="large">Made for GymRats</h1>
+            </div>
+            <form>
+               <div class="leftSide-col">
+                <h2>Usarname</h2>
+                <input class="inputbox" name="username" type="text" placeholder="Username">
+                <h2>Password</h2>
+                 <input class="inputbox" name="password" type="text" placeholder="Password">
+               </div>
+            
+            </form>   
+               
+           </div>
+          <div class="col-6">
+            <div class="rightSide-col">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ROEgvEbu4g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+          </div>
+          
+        </div>
+      
+      
+      </div>
+    
+    
     <script>
     function dropdownMenu() {
-    var x = document.getElementById("dropdownClick");
-    if (x.className === "topnav") {
-        x.className += "responsive";
+      var x = document.getElementById("dropdownClick");
+        if (x.className === "topnav") {
+            x.className += " responsive";
         /*change topnav to topnav.responsive*/
-    }else{
-        x.className = "topnav";
+        }else{
+            x.className = "topnav";
     }    
         
-    }
+}
     </script>
     
-    </body>
+  </body>
 </html>
