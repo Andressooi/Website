@@ -9,6 +9,16 @@ body {
     line-height: 1;
     margin: 0;
 }
+
+label {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.2;
+}
 .container {
     width: 100%;
     margin: 0;
@@ -40,6 +50,9 @@ body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+* {
+    box-sizing: border-box;
+}
 
 nav {
     width: 100%;
@@ -81,19 +94,71 @@ ul.topnav li.dropdownIcon {
     display: none;
 
 }
+/*
 
+ .secondheaderPart h1 { 
+  text-align: center;
+}
+ .square {
+  height: 250px;
+  width: 250px;
+  background-color: transparent;
+  margin: auto;
+  padding: 20px;
+    border-radius: 15px;
+
+ 
+  }
+
+ .row h2 p{
+    text-align: center;
+    margin: 50px;
+}
+*/
 /*############ Custom styles###########*/
 
 #section-1-gradient {
   background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }
 
-.leftSide-col {
+div.box {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0.1);
+    
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: aqua;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.LearnMore {
+    display: block;
+    margin: auto;
+}
+
+.icon {
+    width: 100%;
+    max-height: 125px;
+    max-width: 125px;
+}
+
+div.leftSide-col {
     margin-left: 20%;
 }
 
 div.rightSide-col {
-    margin-left: 15%;
+    margin-left: 8%;
 }
 
 
@@ -102,6 +167,11 @@ h1.large {
     font-size: 56px;
     margin: 0;
     line-height: 70px;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
 }
 
 form h2 {
@@ -113,7 +183,9 @@ input[type="text"] {
     width: 400px;
     min-width: 100px;
     padding: 6px;
+    border-radius: 7px;
 }
+
 
 
 /*################# Mobile #####################*/
@@ -147,7 +219,36 @@ input[type="text"] {
     display: block;
     text-align: left;
 }
+    
+    h1.section2Header {
+        font-size: 50px;
+    }
 
+ .col-6, .col-4 {
+    width: 100%;
+     margin: 0;
+    }
+    
+    div.box {
+        padding: 5px;
+        display: block;
+}
+   
+   div.leftSide-col, div.rightSide-col {
+             margin: 15px;
+
+    }   
+    
+    input[type="text"] {
+        width: 350px;
+    }
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    
+    }
 }
 
 
